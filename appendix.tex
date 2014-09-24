@@ -1,0 +1,31 @@
+\appendix
+\section{Error Analysis}
+The directly measured observables in this paper are the length of the bubble $L_{bubble}$, the slug length $L_{slug}$ and the pressure drop $\Delta P$. From these quantities, the speed of the bubble $v_{bubble}$ and the gas flow rate $Q_{gas}$. The length of the bubbles was measured directly by analysing a video with the program imageJ (as described in section \ref{expsetup}). The length was calculated by using the following equation
+\begin{equation}
+L_{bubble} = N_{px} \cdot c
+\end{equation}
+Where $N_{px}$ is the amount of pixels measured for the distance, and c a benchmarking constant in the units of $\frac{\mu m}{px}$. This constant was determined by measuring the width of the channel, which has a known length of $200~\mu m$. However, the method used in measuring the distance introduces an error. There is a human error in estimating where the bubble begins and ends. A way to circumvent this problem is to automate the process of measuring by the use of a computer program. The same goes for the constant, because it is determined in the same way. The relative error in the length of the bubble would therefore be
+\begin{equation}
+\frac{U(L_{bubble})}{L_{bubble}} = \sqrt{\left(\frac{U(N_{px})}{N_{px}}\right)^{2} +  \left(\frac{U(c)}{c}\right)^{2}}
+\end{equation}
+Notice that the length of the bubble and the slug are determined in the same way and therefore the same equations can be used to determine the error for both lengths.\\
+\\
+As alluded to in section \ref{expsetup}, the speed of the bubble ($v_{bubble}$) was determined by measuring the distance it travels in a number of frames. With the known frame rate of 120 fps, the speed can be determined by the following equation
+\begin{equation}
+v_{bubble} = \frac{l \cdot c}{f \cdot spf}
+\end{equation}
+Where l is the distance traveled in px, f the number of frames it took to travel said distance and spf the time between 2 frames, so the seconds per frame. Because the amount of frames and the seconds per frames are given, the error in the speed of the bubble can be expressed as follows 
+\begin{equation}
+\frac{U(v_{bubble})}{v_{bubble}} = \sqrt{\left(\frac{U(l)}{l}\right)^{2} + \left(\frac{U(c)}{c}\right)^{2}}
+\end{equation}
+\\
+For the error in measuring the gas flow rate (as calculated with formula \ref{flowrate}), where all the constants are a given except for the pressure drop $\Delta P$. Therefore, the error in the gas flow rate can calculated as follows
+\begin{equation}
+\frac{U(Q_{gas})}{Q_{gas}} = \left|\frac{U(\Delta P)}{\Delta P}\right|
+\end{equation}
+It is the absolute value of the relative error because the error is defined as always positive. \\
+\\
+The way the liquid flow rate ($Q_{liquid}$) is measured is through a syringe system. This system is an automated system where a desired flow rate can be chosen, given the inner diameter of the syringe. This diameter is not known and was therefore measured. Because the flow rate scales with square of the diameter, the uncertainty in the flow rate can be expressed as
+\begin{equation}
+\frac{U(Q_{liquid})}{Q_{liquid}} = 2\left|\frac{U(D)}{D}\right|
+\end{equation}
