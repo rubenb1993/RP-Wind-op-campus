@@ -1,3 +1,10 @@
-\section{Method}
+\section{Case and Results}
 \label{method}
-How we built the building and the mesh. 
+In this section the setup of the CFD analysis will be discussed. This includes the generation of the obstacles for the CFD analysis, a discussion on the Reynolds number associated with this geometry and the fluid properties used during the simulation.
+\subsection{Obstacle creation}
+\label{obstacles}
+To be as true to reality as possible (within the scope of the research practicum), not only the Flatiron building was simulated, but also 4 of the surrounding buildings, creating the ``alley'' of wind talked about in the introduction and \cite{dresses}. The dimensions of the Flatiron building itself were found in Bradford and Condit's book ``Rise of the New York Skyscraper 1865-1913'' \cite{skyscraper}, while the other dimensions were roughly estimated from Google Maps (see appendix \ref{obstacles} for a clarification of the method and a complete list of dimensions used). \\
+\indent %
+The program used makes use of an ``obstacle generator'', in which you specify the start and end of the obstacle in the x, y and z direction, creating rectengular cuboids as obstacles. By combining multiple obstacles together, more complex shapes can be created. By discretizing a right angled triangle, the Flatiron building has been built up of X amount of 0.25 metre wide blocks of varying lenth and the heighth of the building. 
+\subsection{Reynolds Number}
+\subsection{Fluid properties}
