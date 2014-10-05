@@ -1,0 +1,289 @@
+title: 
+Urban simulation
+
+properties:
+  
+velocity: 9 
+  
+angle: 0
+  
+density: 1.205
+ 
+ viscosity: 1.82e-5
+  
+pressure: 0
+  
+temperature: 20
+
+  
+
+#initial turbulence properties
+  
+turbulence intensity: 5
+  
+viscosity fraction: 500
+
+
+
+simulation: 
+  
+number of presimulations: 0
+  
+do final simulation: [uds]
+  
+simulation status: begin
+
+  
+number of iterations: 10000
+  
+iterations convergence: 1.0e-4
+  
+iterations written every: 500
+
+  
+
+# Reynolds stress model. 
+Options: standard (eddy viscosity), non-linear eddy viscosity model, asm (Algebraic stress model)
+  
+reynolds stress model: standard
+
+  
+use generalized gradient diffusion hypothesis: false
+
+  
+
+constants:
+    
+Cmu: 0.09
+    
+E smooth wall: 8.432
+    
+E rough wall: 30
+    
+C1: 1.44
+    
+C2: 1.92
+    
+von Karman constant: 0.41
+    
+
+# Cphi for concentration GGDH or AFM
+    
+Cphi: 0.15 
+    
+
+# Ctheta for concentration AFM (SKSI in simulation definition is 1.0-Ctheta)
+    
+Ctheta: 0.4
+
+  
+
+#now the numerical properties
+  
+relaxation:
+    
+velocity: 0.6
+    
+pressure: 0.1
+    
+turbulent kinetic energy: 0.6
+    
+energy dissipation: 0.6
+    
+viscosity: 0.8
+    
+concentration: 0.8
+   
+ concentration variance: 0.7
+    
+temperature: 0.8
+    
+temperature variance: 0.7
+
+  
+time dependent:
+    
+time step: 1.0e10
+   
+ number of timesteps: 1
+    
+time iterations: 102
+    
+monitoring points:
+      - {x: 0.5 , y: 1, z: 1}
+#      - {x: 10, y: 49, z: 11}
+
+  
+
+algebraic stress model:
+    
+constant1: 1.8
+    
+constant2: 0.6
+    
+constant3: 0.6
+
+  
+cells before end for outlet plane: 
+3
+
+mesh: 
+  
+
+# Dimensions, setting these to dynamic will make these dynamic based on obstacles
+  
+# if value is given, space after obstacles is ignored
+  
+width: dynamic
+  
+length: dynamic
+  
+height: dynamic
+
+  
+x space before obstacles: 50 
+  
+x space after obstacles: 50  
+  
+  
+y space before obstacles: 50
+  
+y space after obstacles: 50
+
+  
+z space before obstacles: 0
+ 
+ z space after obstacles: 50
+
+  
+
+# Set this to 0 to use the full refined mesh without making it more coarse in pre-simulations
+  
+number of cells in the flow direction: 0
+  
+  
+cell expansion factor: 1.25
+  
+max deviation from cell expansion factor: 0.15
+  
+allow obstacle shifting: true
+  
+required number of cells between obstacles: 0 
+  
+  
+scale height to: 1.0
+  
+  
+cell width at walls: 0.5
+  
+cell length at walls: 0.5
+  
+cell height at walls: 0.1
+  
+  
+
+#if there is no wall or obstacles present, these values will become the cell sizes
+  
+max cell width: 10
+  
+max cell length: 10 
+  
+max cell height: 10 
+
+  
+
+refined boundary types: [wall]
+
+
+obstacles:
+  
+default roughness: 1.0e-6
+
+  
+operations:
+    - toZero
+    
+
+#- flipX
+    - flipY
+
+trees:
+  constants:
+    
+# Svenson
+    
+drag coefficient: 0.1
+    
+beta p: 0.0
+    
+beta d: 0.0
+    
+C4 epsilon: 0.0
+    
+C5 epsilon: 0.0
+
+
+walls:
+  
+
+#give here the wall names and assign a roughness of the wall in meters
+  
+bottom:
+    roughness: 1.0e-6
+
+#    inlets:
+
+#      - xs: 45
+
+#        xe: 48
+
+#        ys: 54
+
+#        ye: 57
+
+#        velocity_x: 0
+
+#        velocity_y: 0
+
+#        velocity_z: 0.02
+
+#        turbulence intensity: 0
+
+#        viscosity fraction: 500
+
+#        concentration: 1.0
+
+
+
+solar:
+  
+year: 2011
+  
+month: 9
+  
+day: 8
+  
+hour: 14
+  
+minute: 48
+  
+seconds: 0
+  
+latitude: 52.22
+  
+longitude: 4.53
+  
+accuracy: 0.1
+  
+inlet type: 41
+  
+Value: 30
+    
+
+system:
+  f77 
+compiler: gfortran -w -O
+  
+editor: gedit
+  
+timezone: Europe/Amsterdam
