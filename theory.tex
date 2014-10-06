@@ -12,7 +12,7 @@ In this equation $\rho$ is the (constant) fluid density, $u_i$ is the speed of t
 
 There is no analytic solution for these equations governing turbulent flow, so the solutions must be found using numeric calculations on a computer. However, it would not be viable to attempt this calculation down to the smallest scale for a large scale airflow such as the flow around a building. The amount of control volumes and computational power needed would mean that it would take years to complete with even the most potent supercomputers. 
 
-The question arises whether it is really needed to compute the physics down to the smallest level. Where each single small vortex is at each moment is generally not relevant information. The macroscopic effects of turbulent flow is usually what interests the engineer. Since we are only looking for the macroscopic effects of all tiny turbulent phenomena, these effects can be modeled instead of computed to greatly reduce the computational power needed. 
+The question arises whether it is really needed to compute the physics down to the smallest level. Where each single small vortex is at each moment is generally not relevant information. The macroscopic effects of turbulent flow is usually what interests the engineer. Since only the macroscopic effects of all tiny turbulent phenomena are of interest, these effects can be modeled instead of computed to greatly reduce the computational power needed. 
 
 \subsection{Reynolds Averaged Navier Stokes (RANS)}
 A common way to simplify the turbulent flow calculations is by separating the mean value and a fluctuating value of the solution. Separating a quantity $u$ in this way is called \emph{Reynold decomposition}, and can be written as:
@@ -32,7 +32,7 @@ When evaluating \autoref{eq:RANS}, the term $\overline{u_i'u_j'}$ governing the 
 \end{equation}
 where $\nu_t$ is the turbulent viscosity, and $K$ is the turbulent kinetic energy:
 \begin{equation}\label{eq:k}
-k = \frac{1}{2}\overline{v'_iv'_i}.
+k = \frac{1}{2}\overline{u'_iu'_i}.
 \end{equation}
 
 Since the turbulent transfer of momentum by eddies creates internal fluid friction, $\nu_t$ can be thought of as a boost in the viscosity of the fluid. However, $\nu_t$ is not a fluid property, but is dependent on the state of turbulence and must be determined by the turbulence model. It can be defined as 
@@ -41,16 +41,18 @@ Since the turbulent transfer of momentum by eddies creates internal fluid fricti
 \end{equation}
 where $C_\mu$ is a constant. The equations governing the newly introduced properties $k$ and $\epsilon$ are:
 \begin{equation}\label{eq:ke1}
-\frac{\partial k}{\partial t} + \bar{u}_j\frac{\partial k}{\partial x_j} = \frac{\partial}{\partial x_j} \left[(\nu + \nu_t) \frac{\partial k }{\partial x_j}\right] + P_k - \epsilon
+\frac{\partial k}{\partial t} + \bar{u}_j\frac{\partial k}{\partial x_j} = \frac{\partial}{\partial x_j} \left[(\nu + \nu_t) \frac{\partial k }{\partial x_j}\right] + P_k - \epsilon;
 \end{equation}
 \begin{equation}\label{eq:ke2}
-\frac{\partial \epsilon}{\partial t} + \bar{u}_j\frac{\partial \epsilon}{\partial x_j} = \frac{\partial}{\partial x_j} \left[(\nu + \nu_t) \frac{\partial e}{\partial x_j}\right] + \frac{\epsilon}{k}(C_{\epsilon 1}P_k - C_{\epsilon 2}\epsilon)
+\frac{\partial \epsilon}{\partial t} + \bar{u}_j\frac{\partial \epsilon}{\partial x_j} = \frac{\partial}{\partial x_j} \left[(\nu + \nu_t) \frac{\partial \epsilon}{\partial x_j}\right] + \frac{\epsilon}{k}(C_{\epsilon 1}P_k - C_{\epsilon 2}\epsilon).
 \end{equation}
-
+In these equations, $P_k$ is the production of turbulent kinetic energy and $C_{\epsilon 1}$ and $C_{\epsilon 2}$ are model coefficients. $P_k$ is luckily not another variable that has to be modeled, and is defined as:
+\begin{equation}\label{eq:P}
+P_k=-\overline{u'_iu'_i}\frac{\partial \bar{u}_i}{\partial x_j}
+\end{equation}
 
 \subsection{Finite volume method}
 
 The control volume is discretized into finite volume cells into a grid called the \emph{mesh}. In each of these cells the average intensive properties are computed. When directly computing the Navier-Stokes equations, the mesh should be fine enough that these properties are approximately constant over the control volume. When using RANS, this is no longer needed, since the turbulence is averaged and the macroscopic effect of the turbulence are taken into account by use of the turbulent viscosity. Still, A good balance should be found between higher accuracy with a high cell density, and a higher computation speed with lower cell density. 
 
 With every computational step the new values in the equation are computed. The fraction of the difference between the two sides of the equation in the last computational step and the initial values is called the \emph{residual}. On the long term the residual should become smaller until the calculation converges to the solution. 
-
