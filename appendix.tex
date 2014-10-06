@@ -1,29 +1,30 @@
 \clearpage\appendix
 \section{Dimensions of the obstacles}
 \label{appendixdimensions}
-As discussed in section \ref{obstacles}, the obstacles used in the CFD analysis were estimated using Google Maps. In figure \ref{maps} it is shown how these distances were estimated. 
+As discussed in \autoref{obstacles}, the obstacles used in the CFD analysis were estimated using Google Maps. In \autoref{maps} it is shown how these distances were estimated. 
 \begin{figure}[hp]
 \centering
 \includegraphics[width = \textwidth]{flatironafschatting.jpg}
 \caption{A snapshot of the method used to estimate the dimensions using Google Maps. The red lines indicated the measured distances. }
 \label{maps}
 \end{figure}
-From this figure and the measurement tool on the Google Maps program, we found the following dimensions for the Flatiron building and surroundings. The numbers correspond with the building numbers in table \ref{measurements}.\\
+From this figure and the measurement tool on the Google Maps program, we found the following dimensions for the Flatiron building and surroundings. The numbers correspond with the building blocks in \autoref{measurements}. Block number 1 and 3 contain 2 buildings, both exactly the same size and 25 meters apart.
+
 \begin{table}[ht!]
 \centering
 \caption{Parameters used in the generation of the obstacles that are not the Flatiron building, in meters}
 \begin{tabular}{  r  r  r }
 \hline
-Building No. & x-length & y-length\\
+Building block No. & x-length & y-length\\
 \hline 
-1 & 30 & 140 \\
+1 & 20 & 60\\
 2 & 30 & 60 \\
-3 & 30 & 140 \\
+3 & 20 & 60\\
 Space between & 25 & 25 \\
 \hline
 \end{tabular}
 \label{measurements}
-\end{table}\\
+\end{table}
 %
 %
 \section{Streamlines}
@@ -34,19 +35,19 @@ In this section the streamlines to get a general overview. \\
 \includegraphics[width =  \textwidth]{streamlinesbottom.png}
 \caption{Streamlines around the Flatiron and surrounding buildings just above ground level}
 \label{fig:streamlinesbottom}
-\end{figure}\\
+\end{figure}
 \begin{figure}[hp]
 \centering
 \includegraphics[width = \textwidth]{streamlinesmid.png}
 \caption{Streamlines around the Flatiron and surrounding buildings just below the top of the surrounding buildings}
 \label{fig:streamlinesmid}
-\end{figure}\\
+\end{figure}
 \begin{figure}[hp]
 \centering
 \includegraphics[width = \textwidth]{streamlinestop.png}
 \caption{Streamlines around the Flatiron and surrounding buildings just below the top of the Flatiron building}
 \label{fig:streamlinestop}
-\end{figure}\\
+\end{figure}
 %
 %
 \clearpage\section{configuration.yml}
