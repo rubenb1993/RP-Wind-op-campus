@@ -1,10 +1,11 @@
 \section{Theory}
 \label{theory}
 
+Over the years a variety of techniques have been developed to calculate fluid dynamics. In this research a momentum balance called the \emph{Navier-Stokes} equations are used. These equations and their derivatives will be explained in this section, as well as general CFD theory. 
 
-\subsection{Navier Stokes}
+\subsection{Navier-Stokes}
 
-The \emph{Navier-Stokes} equations describe the balance of forces acting at any given region of a fluid. This set of equations is used for computing the flow of a fluid, such as environmental flow. In the case of an incompressible fluid, which air can be approximated as at low wind speeds, the Navier-Stokes equations can be simplified as:
+The Navier-Stokes equations describe the balance of forces acting at any given region of a fluid. This set of equations is used for computing the flow of a fluid, such as environmental flow. In the case of an incompressible fluid, which air can be approximated as at low wind speeds, the Navier-Stokes equations can be simplified as:
 \begin{equation}\label{eq:NS}
 \rho \left( \frac{\partial u_i}{\partial t} + u_j \frac{\partial u_i}{\partial x_j} \right) = -\frac{\partial p}{\partial x_i} + \mu \frac{\partial^2 u_i}{\partial x_j \partial x_j} + f_i. 
 \end{equation} 
@@ -26,7 +27,7 @@ Note that the mean value is not dependent on time. Averaging the fluctuating val
 The solution of these equations consists of the mean kinetic energy (flow) and a term indicating the mean turbulent kinetic energy. Since the effects of turbulence are now averaged, it is possible to use a coarser mesh. It is no longer needed to compute turbulence down to the smallest scale. 
 
 \subsection{The closure problem}
-When evaluating \autoref{eq:RANS}, the term $\overline{u_i'u_j'}$ governing the turbulent energy is still an unknown. At this point we have three equations, but an extra variables: $u_i$ and $\overline{u_i'u_j'}$. Using the \emph{eddy viscosity model} (EVM), this term can be modeled according to:
+When evaluating \autoref{eq:RANS}, the term $\overline{u_i'u_j'}$ governing the turbulent energy is still an unknown. At this point there are three equations, but aside from the three speed variables $u_i$, another unknown term $\overline{u_i'u_j'}$ is introduced. Using the \emph{eddy viscosity model} (EVM), this term can be modeled according to:
 \begin{equation}\label{eq:EVM}
 -\overline{u_i'u_j'}=\nu_t\left(\frac{\partial \bar{u}_i}{\partial x_j} + \frac{\partial \bar{u}_j}{\partial x_i} \right) - \frac{2}{3}k,
 \end{equation}
@@ -39,7 +40,7 @@ Since the turbulent transfer of momentum by eddies creates internal fluid fricti
 \begin{equation}\label{eq:NU}
 \nu_t = C_\mu\frac{k^2}{\epsilon},
 \end{equation}
-where $C_\mu$ is a constant. The equations governing the newly introduced properties $k$ and $\epsilon$ are:
+where $C_\mu$ is a constant, and $\epsilon$ is the dissipation of turbulent energy. The equations governing the properties $k$ and $\epsilon$ are:
 \begin{equation}\label{eq:ke1}
 \frac{\partial k}{\partial t} + \bar{u}_j\frac{\partial k}{\partial x_j} = \frac{\partial}{\partial x_j} \left[(\nu + \nu_t) \frac{\partial k }{\partial x_j}\right] + P_k - \epsilon;
 \end{equation}
@@ -50,6 +51,7 @@ In these equations, $P_k$ is the production of turbulent kinetic energy and $C_{
 \begin{equation}\label{eq:P}
 P_k=-\overline{u'_iu'_i}\frac{\partial \bar{u}_i}{\partial x_j}
 \end{equation}
+At this point we have a system of five equations with five unknowns, so it is possible to compute the solution.
 
 \subsection{Finite volume method}
 
