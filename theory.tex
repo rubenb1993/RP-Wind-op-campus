@@ -5,7 +5,7 @@ Over the years a variety of techniques have been developed to calculate fluid dy
 
 \subsection{Navier-Stokes}
 
-The Navier-Stokes equations describe the balance of forces acting at any given region of a fluid. This set of equations is used for computing the flow of a fluid, such as environmental flow. In the case of an incompressible fluid, which air can be approximated as at low wind speeds, the Navier-Stokes equations can be simplified as:
+The Navier-Stokes equations describe the balance of forces acting at any given region of a fluid. This set of equations is used for computing the flow of a fluid, such as environmental flow. In the case of an incompressible fluid, which air can be approximated as at low wind speeds\cite{fundaero}, the Navier-Stokes equations can be simplified as:
 \begin{equation}\label{eq:NS}
 \rho \left( \frac{\partial u_i}{\partial t} + u_j \frac{\partial u_i}{\partial x_j} \right) = -\frac{\partial p}{\partial x_i} + \mu \frac{\partial^2 u_i}{\partial x_j \partial x_j} + f_i. 
 \end{equation} 
@@ -20,7 +20,7 @@ A common way to simplify the turbulent flow calculations is by separating the me
 \begin{equation}\label{eq:RD}
 u(x,y,z,t) = \overline{u(x,y,z)}+u'(x,y,z,t).
 \end{equation}
-Note that the mean value is not dependent on time. Averaging the fluctuating value over time will return 0: since the mean value of $u$ is already captured in $\bar{u}$, the fluctuating part necessarily fluctuates around 0. By substituting \autoref{eq:RD} in \autoref{eq:NS} and averaging the equation, we arrive at the time-independent \emph{Reynolds averaged Navier-Stokes} (RANS) equations:
+Note that the mean value is not dependent on time. Averaging the fluctuating value over time will return 0; since the mean value of $u$ is already captured in $\bar{u}$, the fluctuating part necessarily fluctuates around 0. By substituting \autoref{eq:RD} in \autoref{eq:NS} and averaging the equation, the time-independent \emph{Reynolds averaged Navier-Stokes} (RANS) equations are derived:
 \begin{equation}\label{eq:RANS}
 \rho \bar{u}_j \frac{\partial \bar{u}_i}{\partial x_j} = -\frac{\partial}{\partial x_i} \left[ \bar{p} + \mu \frac{\partial \bar{u}_i}{\partial x_j} + \frac{\partial \bar{u}_j}{\partial x_i} - \rho \overline{u_i'u_j'}\right] + f_i. 
 \end{equation} 
@@ -31,7 +31,7 @@ When evaluating \autoref{eq:RANS}, the term $\overline{u_i'u_j'}$ governing the 
 \begin{equation}\label{eq:EVM}
 -\overline{u_i'u_j'}=\nu_t\left(\frac{\partial \bar{u}_i}{\partial x_j} + \frac{\partial \bar{u}_j}{\partial x_i} \right) - \frac{2}{3}k,
 \end{equation}
-where $\nu_t$ is the turbulent viscosity, and $K$ is the turbulent kinetic energy:
+where $\nu_t$ is the turbulent viscosity, and $k$ is the turbulent kinetic energy:
 \begin{equation}\label{eq:k}
 k = \frac{1}{2}\overline{u'_iu'_i}.
 \end{equation}
@@ -57,4 +57,4 @@ At this point we have a system of five equations with five unknowns, so it is po
 
 The control volume is discretized into finite volume cells into a grid called the \emph{mesh}. In each of these cells the average intensive properties are computed. When directly computing the Navier-Stokes equations, the mesh should be fine enough that these properties are approximately constant over the control volume. When using RANS, this is no longer needed, since the turbulence is averaged and the macroscopic effect of the turbulence are taken into account by use of the turbulent viscosity. Still, A good balance should be found between higher accuracy with a high cell density, and a higher computation speed with lower cell density. 
 
-With every computational step the new values in the equation are computed. The fraction of the difference between the two sides of the equation in the last computational step and the initial values is called the \emph{residual}. On the long term the residual should become smaller until the calculation converges to the solution. 
+With every computational step the new values in the equation are computed. The difference between two consecutively computed values, divided by the mean value is called the \emph{residual}. On the long term the residual should become smaller until the calculation converges to the solution. 
