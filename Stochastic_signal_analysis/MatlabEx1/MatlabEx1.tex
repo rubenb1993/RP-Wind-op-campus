@@ -14,7 +14,16 @@
 \usepackage{hyperref}
 \usepackage{siunitx}
 \usepackage{listings}
+<<<<<<< HEAD
 \setlength{\extrarowheight}{3pt}
+=======
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{environ}
+
+\pgfplotsset{compat=1.11}
+
+>>>>>>> origin/master
 \usepackage{listings}
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
@@ -22,6 +31,7 @@
 
 \lstset{language=Matlab,%
     %basicstyle=\color{red},
+		basicstyle=\scriptsize,
     breaklines=true,%
     morekeywords={matlab2tikz},
     keywordstyle=\color{blue},%
@@ -30,8 +40,8 @@
     stringstyle=\color{mylilas},
     commentstyle=\color{mygreen},%
     showstringspaces=false,%without this there will be a symbol in the places where there is a space
-    numbers=left,%
-    numberstyle={\tiny \color{black}},% size of the numbers
+    %numbers=left,%
+    %numberstyle={\tiny \color{black}},% size of the numbers
     numbersep=9pt, % this defines how far the numbers are from the text
     emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
     %emph=[2]{word1,word2}, emphstyle=[2]{style},    
@@ -52,10 +62,24 @@
 	\beta_2 = \frac{m}{m+\gamma\Delta t}
 \end{equation}
 \begin{equation}
-	\beta_3 = \frac{\sqrt{sk_BT\gamma}}{\sqrt{\Delta t}(m+\gamma\Delta t)}
+	\beta_3 = \frac{\sqrt{2k_BT\gamma\Delta t}}{\frac{m}{\Delta t}+\gamma}
 \end{equation}
 
-\section{}
+\newpage\section{}
+\lstinputlisting{m/Exercise_2.m}
+\input{m/Exercise_2.tex}
+
+\newpage\section{}
+\lstinputlisting{m/Exercise_3.m}
+\input{m/Exercise_3.tex}
+
+\newpage\section{}
+\lstinputlisting{m/Exercise_4.m}
+\includegraphics[width=\textwidth]{m/Exercise_4.pdf} 
+
+\newpage\section{}
+\lstinputlisting{m/Exercise_4.m}
+\includegraphics[width=\textwidth]{m/Exercise_4.pdf} 
 
 \section{}
 \begin{table}[h]

@@ -1,0 +1,2462 @@
+% This file was created by matlab2tikz.
+% Minimal pgfplots version: 1.3
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.00000,0.56250}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0.689073\fwidth,0\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=200,
+title={L=3000, h=100000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-7.62747978129447e-08	0\\
+-7.62747978129447e-08	1\\
+-7.36828563088987e-08	1\\
+-7.36828563088987e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-7.36828563088987e-08	0\\
+-7.36828563088987e-08	1\\
+-7.10909148048527e-08	1\\
+-7.10909148048527e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-7.10909148048527e-08	0\\
+-7.10909148048527e-08	2\\
+-6.84989733008067e-08	2\\
+-6.84989733008067e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.84989733008067e-08	0\\
+-6.84989733008067e-08	5\\
+-6.59070317967607e-08	5\\
+-6.59070317967607e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.59070317967607e-08	0\\
+-6.59070317967607e-08	1\\
+-6.33150902927147e-08	1\\
+-6.33150902927147e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.33150902927146e-08	0\\
+-6.33150902927146e-08	1\\
+-6.07231487886686e-08	1\\
+-6.07231487886686e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.07231487886686e-08	0\\
+-6.07231487886686e-08	4\\
+-5.81312072846226e-08	4\\
+-5.81312072846226e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.81312072846226e-08	0\\
+-5.81312072846226e-08	4\\
+-5.55392657805766e-08	4\\
+-5.55392657805766e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.55392657805766e-08	0\\
+-5.55392657805766e-08	7\\
+-5.29473242765306e-08	7\\
+-5.29473242765306e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.29473242765306e-08	0\\
+-5.29473242765306e-08	7\\
+-5.03553827724846e-08	7\\
+-5.03553827724846e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.03553827724846e-08	0\\
+-5.03553827724846e-08	13\\
+-4.77634412684386e-08	13\\
+-4.77634412684386e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.77634412684386e-08	0\\
+-4.77634412684386e-08	14\\
+-4.51714997643926e-08	14\\
+-4.51714997643926e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.51714997643926e-08	0\\
+-4.51714997643926e-08	11\\
+-4.25795582603465e-08	11\\
+-4.25795582603465e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.25795582603465e-08	0\\
+-4.25795582603465e-08	22\\
+-3.99876167563005e-08	22\\
+-3.99876167563005e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.99876167563005e-08	0\\
+-3.99876167563005e-08	26\\
+-3.73956752522545e-08	26\\
+-3.73956752522545e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.73956752522545e-08	0\\
+-3.73956752522545e-08	29\\
+-3.48037337482085e-08	29\\
+-3.48037337482085e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.48037337482085e-08	0\\
+-3.48037337482085e-08	44\\
+-3.22117922441625e-08	44\\
+-3.22117922441625e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.22117922441625e-08	0\\
+-3.22117922441625e-08	54\\
+-2.96198507401165e-08	54\\
+-2.96198507401165e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.96198507401165e-08	0\\
+-2.96198507401165e-08	53\\
+-2.70279092360705e-08	53\\
+-2.70279092360705e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.70279092360705e-08	0\\
+-2.70279092360705e-08	72\\
+-2.44359677320244e-08	72\\
+-2.44359677320244e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.44359677320244e-08	0\\
+-2.44359677320244e-08	91\\
+-2.18440262279784e-08	91\\
+-2.18440262279784e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.18440262279784e-08	0\\
+-2.18440262279784e-08	82\\
+-1.92520847239324e-08	82\\
+-1.92520847239324e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.92520847239324e-08	0\\
+-1.92520847239324e-08	110\\
+-1.66601432198864e-08	110\\
+-1.66601432198864e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.66601432198864e-08	0\\
+-1.66601432198864e-08	111\\
+-1.40682017158404e-08	111\\
+-1.40682017158404e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.40682017158404e-08	0\\
+-1.40682017158404e-08	135\\
+-1.14762602117944e-08	135\\
+-1.14762602117944e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.14762602117944e-08	0\\
+-1.14762602117944e-08	139\\
+-8.88431870774838e-09	139\\
+-8.88431870774838e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-8.88431870774838e-09	0\\
+-8.88431870774838e-09	123\\
+-6.29237720370236e-09	123\\
+-6.29237720370236e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.29237720370235e-09	0\\
+-6.29237720370235e-09	160\\
+-3.70043569965634e-09	160\\
+-3.70043569965634e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.70043569965634e-09	0\\
+-3.70043569965634e-09	142\\
+-1.10849419561032e-09	142\\
+-1.10849419561032e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.10849419561033e-09	0\\
+-1.10849419561033e-09	147\\
+1.48344730843569e-09	147\\
+1.48344730843569e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.48344730843569e-09	0\\
+1.48344730843569e-09	137\\
+4.0753888124817e-09	137\\
+4.0753888124817e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.0753888124817e-09	0\\
+4.0753888124817e-09	149\\
+6.66733031652771e-09	149\\
+6.66733031652771e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.66733031652771e-09	0\\
+6.66733031652771e-09	143\\
+9.25927182057372e-09	143\\
+9.25927182057372e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+9.25927182057372e-09	0\\
+9.25927182057372e-09	133\\
+1.18512133246197e-08	133\\
+1.18512133246197e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.18512133246197e-08	0\\
+1.18512133246197e-08	124\\
+1.44431548286657e-08	124\\
+1.44431548286657e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.44431548286657e-08	0\\
+1.44431548286657e-08	112\\
+1.70350963327118e-08	112\\
+1.70350963327118e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.70350963327118e-08	0\\
+1.70350963327118e-08	74\\
+1.96270378367578e-08	74\\
+1.96270378367578e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.96270378367578e-08	0\\
+1.96270378367578e-08	86\\
+2.22189793408038e-08	86\\
+2.22189793408038e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.22189793408038e-08	0\\
+2.22189793408038e-08	95\\
+2.48109208448498e-08	95\\
+2.48109208448498e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.48109208448498e-08	0\\
+2.48109208448498e-08	68\\
+2.74028623488958e-08	68\\
+2.74028623488958e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.74028623488958e-08	0\\
+2.74028623488958e-08	54\\
+2.99948038529418e-08	54\\
+2.99948038529418e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.99948038529418e-08	0\\
+2.99948038529418e-08	49\\
+3.25867453569878e-08	49\\
+3.25867453569878e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.25867453569878e-08	0\\
+3.25867453569878e-08	45\\
+3.51786868610339e-08	45\\
+3.51786868610339e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.51786868610339e-08	0\\
+3.51786868610339e-08	24\\
+3.77706283650799e-08	24\\
+3.77706283650799e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.77706283650799e-08	0\\
+3.77706283650799e-08	20\\
+4.03625698691259e-08	20\\
+4.03625698691259e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.03625698691259e-08	0\\
+4.03625698691259e-08	34\\
+4.29545113731719e-08	34\\
+4.29545113731719e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.29545113731719e-08	0\\
+4.29545113731719e-08	19\\
+4.55464528772179e-08	19\\
+4.55464528772179e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.55464528772179e-08	0\\
+4.55464528772179e-08	5\\
+4.81383943812639e-08	5\\
+4.81383943812639e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.81383943812639e-08	0\\
+4.81383943812639e-08	2\\
+5.07303358853099e-08	2\\
+5.07303358853099e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.07303358853099e-08	0\\
+5.07303358853099e-08	5\\
+5.33222773893559e-08	5\\
+5.33222773893559e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.33222773893559e-08	0\\
+5.33222773893559e-08	6\\
+5.5914218893402e-08	6\\
+5.5914218893402e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.5914218893402e-08	0\\
+5.5914218893402e-08	1\\
+5.8506160397448e-08	1\\
+5.8506160397448e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.8506160397448e-08	0\\
+5.8506160397448e-08	1\\
+6.1098101901494e-08	1\\
+6.1098101901494e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.1098101901494e-08	0\\
+6.1098101901494e-08	3\\
+6.56916851370422e-08	3\\
+6.56916851370422e-08	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0.344536\fwidth,0\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=200,
+title={L=3000, h=10000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.36174480452903e-08	0\\
+-2.36174480452903e-08	1\\
+-2.27906500590025e-08	1\\
+-2.27906500590025e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.27906500590025e-08	0\\
+-2.27906500590025e-08	1\\
+-2.19638520727147e-08	1\\
+-2.19638520727147e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.19638520727147e-08	0\\
+-2.19638520727147e-08	1\\
+-2.11370540864269e-08	1\\
+-2.11370540864269e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.11370540864269e-08	0\\
+-2.11370540864269e-08	2\\
+-2.03102561001391e-08	2\\
+-2.03102561001391e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.03102561001391e-08	0\\
+-2.03102561001391e-08	2\\
+-1.94834581138514e-08	2\\
+-1.94834581138514e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.94834581138514e-08	0\\
+-1.94834581138514e-08	4\\
+-1.86566601275636e-08	4\\
+-1.86566601275636e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.86566601275636e-08	0\\
+-1.86566601275636e-08	4\\
+-1.78298621412758e-08	4\\
+-1.78298621412758e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.78298621412758e-08	0\\
+-1.78298621412758e-08	5\\
+-1.7003064154988e-08	5\\
+-1.7003064154988e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.7003064154988e-08	0\\
+-1.7003064154988e-08	2\\
+-1.61762661687003e-08	2\\
+-1.61762661687003e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.61762661687003e-08	0\\
+-1.61762661687003e-08	7\\
+-1.53494681824125e-08	7\\
+-1.53494681824125e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.53494681824125e-08	0\\
+-1.53494681824125e-08	6\\
+-1.45226701961247e-08	6\\
+-1.45226701961247e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.45226701961247e-08	0\\
+-1.45226701961247e-08	16\\
+-1.36958722098369e-08	16\\
+-1.36958722098369e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.36958722098369e-08	0\\
+-1.36958722098369e-08	31\\
+-1.28690742235491e-08	31\\
+-1.28690742235491e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.28690742235491e-08	0\\
+-1.28690742235491e-08	33\\
+-1.20422762372614e-08	33\\
+-1.20422762372614e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.20422762372614e-08	0\\
+-1.20422762372614e-08	26\\
+-1.12154782509736e-08	26\\
+-1.12154782509736e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.12154782509736e-08	0\\
+-1.12154782509736e-08	40\\
+-1.03886802646858e-08	40\\
+-1.03886802646858e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.03886802646858e-08	0\\
+-1.03886802646858e-08	39\\
+-9.56188227839803e-09	39\\
+-9.56188227839803e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-9.56188227839803e-09	0\\
+-9.56188227839803e-09	58\\
+-8.73508429211025e-09	58\\
+-8.73508429211025e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-8.73508429211025e-09	0\\
+-8.73508429211025e-09	75\\
+-7.90828630582247e-09	75\\
+-7.90828630582247e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-7.90828630582247e-09	0\\
+-7.90828630582247e-09	71\\
+-7.08148831953469e-09	71\\
+-7.08148831953469e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-7.08148831953469e-09	0\\
+-7.08148831953469e-09	97\\
+-6.25469033324692e-09	97\\
+-6.25469033324692e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.25469033324691e-09	0\\
+-6.25469033324691e-09	92\\
+-5.42789234695914e-09	92\\
+-5.42789234695914e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.42789234695914e-09	0\\
+-5.42789234695914e-09	111\\
+-4.60109436067136e-09	111\\
+-4.60109436067136e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.60109436067136e-09	0\\
+-4.60109436067136e-09	117\\
+-3.77429637438358e-09	117\\
+-3.77429637438358e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.77429637438358e-09	0\\
+-3.77429637438358e-09	164\\
+-2.9474983880958e-09	164\\
+-2.9474983880958e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.94749838809581e-09	0\\
+-2.94749838809581e-09	141\\
+-2.12070040180803e-09	141\\
+-2.12070040180803e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.12070040180803e-09	0\\
+-2.12070040180803e-09	163\\
+-1.29390241552025e-09	163\\
+-1.29390241552025e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.29390241552025e-09	0\\
+-1.29390241552025e-09	151\\
+-4.6710442923247e-10	151\\
+-4.6710442923247e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.67104429232471e-10	0\\
+-4.67104429232471e-10	155\\
+3.59693557055307e-10	155\\
+3.59693557055307e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.59693557055307e-10	0\\
+3.59693557055307e-10	135\\
+1.18649154334308e-09	135\\
+1.18649154334308e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.18649154334309e-09	0\\
+1.18649154334309e-09	182\\
+2.01328952963087e-09	182\\
+2.01328952963087e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.01328952963086e-09	0\\
+2.01328952963086e-09	145\\
+2.84008751591864e-09	145\\
+2.84008751591864e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.84008751591864e-09	0\\
+2.84008751591864e-09	133\\
+3.66688550220642e-09	133\\
+3.66688550220642e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.66688550220642e-09	0\\
+3.66688550220642e-09	108\\
+4.4936834884942e-09	108\\
+4.4936834884942e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.4936834884942e-09	0\\
+4.4936834884942e-09	113\\
+5.32048147478197e-09	113\\
+5.32048147478197e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.32048147478198e-09	0\\
+5.32048147478198e-09	94\\
+6.14727946106975e-09	94\\
+6.14727946106975e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.14727946106975e-09	0\\
+6.14727946106975e-09	63\\
+6.97407744735753e-09	63\\
+6.97407744735753e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.97407744735753e-09	0\\
+6.97407744735753e-09	70\\
+7.80087543364531e-09	70\\
+7.80087543364531e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+7.80087543364531e-09	0\\
+7.80087543364531e-09	79\\
+8.62767341993309e-09	79\\
+8.62767341993309e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+8.62767341993309e-09	0\\
+8.62767341993309e-09	56\\
+9.45447140622087e-09	56\\
+9.45447140622087e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+9.45447140622086e-09	0\\
+9.45447140622086e-09	44\\
+1.02812693925086e-08	44\\
+1.02812693925086e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.02812693925086e-08	0\\
+1.02812693925086e-08	26\\
+1.11080673787964e-08	26\\
+1.11080673787964e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.11080673787964e-08	0\\
+1.11080673787964e-08	26\\
+1.19348653650842e-08	26\\
+1.19348653650842e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.19348653650842e-08	0\\
+1.19348653650842e-08	34\\
+1.2761663351372e-08	34\\
+1.2761663351372e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.2761663351372e-08	0\\
+1.2761663351372e-08	18\\
+1.35884613376598e-08	18\\
+1.35884613376598e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.35884613376598e-08	0\\
+1.35884613376598e-08	15\\
+1.44152593239475e-08	15\\
+1.44152593239475e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.44152593239475e-08	0\\
+1.44152593239475e-08	9\\
+1.52420573102353e-08	9\\
+1.52420573102353e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.52420573102353e-08	0\\
+1.52420573102353e-08	12\\
+1.60688552965231e-08	12\\
+1.60688552965231e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.60688552965231e-08	0\\
+1.60688552965231e-08	4\\
+1.68956532828109e-08	4\\
+1.68956532828109e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.68956532828109e-08	0\\
+1.68956532828109e-08	6\\
+1.77224512690986e-08	6\\
+1.77224512690986e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.77224512690986e-08	0\\
+1.77224512690986e-08	4\\
+1.85492492553864e-08	4\\
+1.85492492553864e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.85492492553864e-08	0\\
+1.85492492553864e-08	3\\
+1.93760472416742e-08	3\\
+1.93760472416742e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.93760472416742e-08	0\\
+1.93760472416742e-08	4\\
+2.0202845227962e-08	4\\
+2.0202845227962e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.0202845227962e-08	0\\
+2.0202845227962e-08	2\\
+2.1668142713676e-08	2\\
+2.1668142713676e-08	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0\fwidth,0\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=200,
+title={L=3000, h=1000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.98552880487032e-09	0\\
+-6.98552880487032e-09	2\\
+-6.73254993084896e-09	2\\
+-6.73254993084896e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.73254993084896e-09	0\\
+-6.73254993084896e-09	0\\
+-6.4795710568276e-09	0\\
+-6.4795710568276e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.4795710568276e-09	0\\
+-6.4795710568276e-09	0\\
+-6.22659218280624e-09	0\\
+-6.22659218280624e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.22659218280624e-09	0\\
+-6.22659218280624e-09	2\\
+-5.97361330878488e-09	2\\
+-5.97361330878488e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.97361330878488e-09	0\\
+-5.97361330878488e-09	0\\
+-5.72063443476352e-09	0\\
+-5.72063443476352e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.72063443476352e-09	0\\
+-5.72063443476352e-09	4\\
+-5.46765556074217e-09	4\\
+-5.46765556074217e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.46765556074216e-09	0\\
+-5.46765556074216e-09	5\\
+-5.21467668672081e-09	5\\
+-5.21467668672081e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.21467668672081e-09	0\\
+-5.21467668672081e-09	9\\
+-4.96169781269945e-09	9\\
+-4.96169781269945e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.96169781269945e-09	0\\
+-4.96169781269945e-09	4\\
+-4.70871893867809e-09	4\\
+-4.70871893867809e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.70871893867809e-09	0\\
+-4.70871893867809e-09	5\\
+-4.45574006465673e-09	5\\
+-4.45574006465673e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.45574006465673e-09	0\\
+-4.45574006465673e-09	13\\
+-4.20276119063537e-09	13\\
+-4.20276119063537e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.20276119063537e-09	0\\
+-4.20276119063537e-09	24\\
+-3.94978231661401e-09	24\\
+-3.94978231661401e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.94978231661401e-09	0\\
+-3.94978231661401e-09	18\\
+-3.69680344259265e-09	18\\
+-3.69680344259265e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.69680344259265e-09	0\\
+-3.69680344259265e-09	28\\
+-3.4438245685713e-09	28\\
+-3.4438245685713e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.4438245685713e-09	0\\
+-3.4438245685713e-09	36\\
+-3.19084569454994e-09	36\\
+-3.19084569454994e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.19084569454994e-09	0\\
+-3.19084569454994e-09	52\\
+-2.93786682052858e-09	52\\
+-2.93786682052858e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.93786682052858e-09	0\\
+-2.93786682052858e-09	52\\
+-2.68488794650722e-09	52\\
+-2.68488794650722e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.68488794650722e-09	0\\
+-2.68488794650722e-09	63\\
+-2.43190907248586e-09	63\\
+-2.43190907248586e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.43190907248586e-09	0\\
+-2.43190907248586e-09	71\\
+-2.1789301984645e-09	71\\
+-2.1789301984645e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.1789301984645e-09	0\\
+-2.1789301984645e-09	93\\
+-1.92595132444314e-09	93\\
+-1.92595132444314e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.92595132444314e-09	0\\
+-1.92595132444314e-09	90\\
+-1.67297245042179e-09	90\\
+-1.67297245042179e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.67297245042179e-09	0\\
+-1.67297245042179e-09	125\\
+-1.41999357640043e-09	125\\
+-1.41999357640043e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.41999357640043e-09	0\\
+-1.41999357640043e-09	122\\
+-1.16701470237907e-09	122\\
+-1.16701470237907e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.16701470237907e-09	0\\
+-1.16701470237907e-09	122\\
+-9.14035828357709e-10	122\\
+-9.14035828357709e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-9.14035828357708e-10	0\\
+-9.14035828357708e-10	137\\
+-6.6105695433635e-10	137\\
+-6.6105695433635e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.6105695433635e-10	0\\
+-6.6105695433635e-10	142\\
+-4.08078080314991e-10	142\\
+-4.08078080314991e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.08078080314991e-10	0\\
+-4.08078080314991e-10	133\\
+-1.55099206293632e-10	133\\
+-1.55099206293632e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.55099206293632e-10	0\\
+-1.55099206293632e-10	154\\
+9.78796677277263e-11	154\\
+9.78796677277263e-11	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+9.78796677277262e-11	0\\
+9.78796677277262e-11	138\\
+3.50858541749085e-10	138\\
+3.50858541749085e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.50858541749085e-10	0\\
+3.50858541749085e-10	137\\
+6.03837415770443e-10	137\\
+6.03837415770443e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.03837415770443e-10	0\\
+6.03837415770443e-10	164\\
+8.56816289791802e-10	164\\
+8.56816289791802e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+8.56816289791801e-10	0\\
+8.56816289791801e-10	153\\
+1.10979516381316e-09	153\\
+1.10979516381316e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.10979516381316e-09	0\\
+1.10979516381316e-09	121\\
+1.36277403783452e-09	121\\
+1.36277403783452e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.36277403783452e-09	0\\
+1.36277403783452e-09	113\\
+1.61575291185588e-09	113\\
+1.61575291185588e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.61575291185588e-09	0\\
+1.61575291185588e-09	111\\
+1.86873178587724e-09	111\\
+1.86873178587724e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.86873178587724e-09	0\\
+1.86873178587724e-09	78\\
+2.1217106598986e-09	78\\
+2.1217106598986e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.1217106598986e-09	0\\
+2.1217106598986e-09	87\\
+2.37468953391995e-09	87\\
+2.37468953391995e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.37468953391995e-09	0\\
+2.37468953391995e-09	77\\
+2.62766840794131e-09	77\\
+2.62766840794131e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.62766840794131e-09	0\\
+2.62766840794131e-09	63\\
+2.88064728196267e-09	63\\
+2.88064728196267e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.88064728196267e-09	0\\
+2.88064728196267e-09	39\\
+3.13362615598403e-09	39\\
+3.13362615598403e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.13362615598403e-09	0\\
+3.13362615598403e-09	51\\
+3.38660503000539e-09	51\\
+3.38660503000539e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.38660503000539e-09	0\\
+3.38660503000539e-09	34\\
+3.63958390402675e-09	34\\
+3.63958390402675e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.63958390402675e-09	0\\
+3.63958390402675e-09	30\\
+3.89256277804811e-09	30\\
+3.89256277804811e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.89256277804811e-09	0\\
+3.89256277804811e-09	21\\
+4.14554165206947e-09	21\\
+4.14554165206947e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.14554165206946e-09	0\\
+4.14554165206946e-09	19\\
+4.39852052609082e-09	19\\
+4.39852052609082e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.39852052609082e-09	0\\
+4.39852052609082e-09	18\\
+4.65149940011218e-09	18\\
+4.65149940011218e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.65149940011218e-09	0\\
+4.65149940011218e-09	16\\
+4.90447827413354e-09	16\\
+4.90447827413354e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.90447827413354e-09	0\\
+4.90447827413354e-09	11\\
+5.1574571481549e-09	11\\
+5.1574571481549e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.1574571481549e-09	0\\
+5.1574571481549e-09	4\\
+5.41043602217626e-09	4\\
+5.41043602217626e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.41043602217626e-09	0\\
+5.41043602217626e-09	2\\
+5.66341489619762e-09	2\\
+5.66341489619762e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.66341489619762e-09	0\\
+5.66341489619762e-09	4\\
+5.91639377021898e-09	4\\
+5.91639377021898e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.91639377021898e-09	0\\
+5.91639377021898e-09	2\\
+6.16937264424033e-09	2\\
+6.16937264424033e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.16937264424034e-09	0\\
+6.16937264424034e-09	0\\
+6.42235151826169e-09	0\\
+6.42235151826169e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.42235151826169e-09	0\\
+6.42235151826169e-09	1\\
+6.87069478250526e-09	1\\
+6.87069478250526e-09	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0.689073\fwidth,0.367647\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=50,
+title={L=300, h=100000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.53947595583048e-08	0\\
+-5.53947595583048e-08	4\\
+-4.89974127808629e-08	4\\
+-4.89974127808629e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.89974127808629e-08	0\\
+-4.89974127808629e-08	2\\
+-4.26000660034209e-08	2\\
+-4.26000660034209e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.26000660034209e-08	0\\
+-4.26000660034209e-08	5\\
+-3.6202719225979e-08	5\\
+-3.6202719225979e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.6202719225979e-08	0\\
+-3.6202719225979e-08	7\\
+-2.98053724485371e-08	7\\
+-2.98053724485371e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.98053724485371e-08	0\\
+-2.98053724485371e-08	13\\
+-2.34080256710951e-08	13\\
+-2.34080256710951e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.34080256710951e-08	0\\
+-2.34080256710951e-08	23\\
+-1.70106788936532e-08	23\\
+-1.70106788936532e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.70106788936532e-08	0\\
+-1.70106788936532e-08	32\\
+-1.06133321162112e-08	32\\
+-1.06133321162112e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.06133321162112e-08	0\\
+-1.06133321162112e-08	47\\
+-4.2159853387693e-09	47\\
+-4.2159853387693e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.2159853387693e-09	0\\
+-4.2159853387693e-09	40\\
+2.18136143867264e-09	40\\
+2.18136143867264e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.18136143867264e-09	0\\
+2.18136143867264e-09	37\\
+8.57870821611458e-09	37\\
+8.57870821611458e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+8.57870821611457e-09	0\\
+8.57870821611457e-09	22\\
+1.49760549935565e-08	22\\
+1.49760549935565e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.49760549935565e-08	0\\
+1.49760549935565e-08	21\\
+2.13734017709985e-08	21\\
+2.13734017709985e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.13734017709985e-08	0\\
+2.13734017709985e-08	18\\
+2.77707485484404e-08	18\\
+2.77707485484404e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.77707485484404e-08	0\\
+2.77707485484404e-08	17\\
+3.41680953258823e-08	17\\
+3.41680953258823e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.41680953258823e-08	0\\
+3.41680953258823e-08	6\\
+4.05654421033243e-08	6\\
+4.05654421033243e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.05654421033243e-08	0\\
+4.05654421033243e-08	4\\
+4.69627888807662e-08	4\\
+4.69627888807662e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.69627888807662e-08	0\\
+4.69627888807662e-08	2\\
+5.54105369633599e-08	2\\
+5.54105369633599e-08	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0.344536\fwidth,0.367647\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=50,
+title={L=300, h=10000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.74478594886513e-08	0\\
+-1.74478594886513e-08	1\\
+-1.53103618171547e-08	1\\
+-1.53103618171547e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.53103618171547e-08	0\\
+-1.53103618171547e-08	4\\
+-1.31728641456582e-08	4\\
+-1.31728641456582e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.31728641456582e-08	0\\
+-1.31728641456582e-08	12\\
+-1.10353664741617e-08	12\\
+-1.10353664741617e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.10353664741617e-08	0\\
+-1.10353664741617e-08	12\\
+-8.89786880266519e-09	12\\
+-8.89786880266519e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-8.89786880266519e-09	0\\
+-8.89786880266519e-09	20\\
+-6.76037113116868e-09	20\\
+-6.76037113116868e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-6.76037113116868e-09	0\\
+-6.76037113116868e-09	23\\
+-4.62287345967216e-09	23\\
+-4.62287345967216e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.62287345967216e-09	0\\
+-4.62287345967216e-09	35\\
+-2.48537578817564e-09	35\\
+-2.48537578817564e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.48537578817564e-09	0\\
+-2.48537578817564e-09	44\\
+-3.47878116679128e-10	44\\
+-3.47878116679128e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.47878116679128e-10	0\\
+-3.47878116679128e-10	45\\
+1.78961955481739e-09	45\\
+1.78961955481739e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.78961955481739e-09	0\\
+1.78961955481739e-09	31\\
+3.92711722631391e-09	31\\
+3.92711722631391e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.92711722631391e-09	0\\
+3.92711722631391e-09	24\\
+6.06461489781042e-09	24\\
+6.06461489781042e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.06461489781042e-09	0\\
+6.06461489781042e-09	18\\
+8.20211256930694e-09	18\\
+8.20211256930694e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+8.20211256930694e-09	0\\
+8.20211256930694e-09	14\\
+1.03396102408035e-08	14\\
+1.03396102408035e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.03396102408035e-08	0\\
+1.03396102408035e-08	6\\
+1.24771079123e-08	6\\
+1.24771079123e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.24771079123e-08	0\\
+1.24771079123e-08	6\\
+1.46146055837965e-08	6\\
+1.46146055837965e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.46146055837965e-08	0\\
+1.46146055837965e-08	2\\
+1.6752103255293e-08	2\\
+1.6752103255293e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.6752103255293e-08	0\\
+1.6752103255293e-08	3\\
+1.95746861922701e-08	3\\
+1.95746861922701e-08	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0\fwidth,0.367647\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=50,
+title={L=300, h=1000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.26737189566181e-09	0\\
+-5.26737189566181e-09	4\\
+-4.56658028925367e-09	4\\
+-4.56658028925367e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.56658028925367e-09	0\\
+-4.56658028925367e-09	7\\
+-3.86578868284553e-09	7\\
+-3.86578868284553e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.86578868284553e-09	0\\
+-3.86578868284553e-09	10\\
+-3.16499707643739e-09	10\\
+-3.16499707643739e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.16499707643739e-09	0\\
+-3.16499707643739e-09	14\\
+-2.46420547002925e-09	14\\
+-2.46420547002925e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.46420547002925e-09	0\\
+-2.46420547002925e-09	25\\
+-1.76341386362112e-09	25\\
+-1.76341386362112e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.76341386362112e-09	0\\
+-1.76341386362112e-09	31\\
+-1.06262225721298e-09	31\\
+-1.06262225721298e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.06262225721298e-09	0\\
+-1.06262225721298e-09	31\\
+-3.6183065080484e-10	31\\
+-3.6183065080484e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.61830650804839e-10	0\\
+-3.61830650804839e-10	42\\
+3.38960955603299e-10	42\\
+3.38960955603299e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.38960955603299e-10	0\\
+3.38960955603299e-10	44\\
+1.03975256201144e-09	44\\
+1.03975256201144e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.03975256201144e-09	0\\
+1.03975256201144e-09	27\\
+1.74054416841958e-09	27\\
+1.74054416841958e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.74054416841958e-09	0\\
+1.74054416841958e-09	19\\
+2.44133577482771e-09	19\\
+2.44133577482771e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.44133577482771e-09	0\\
+2.44133577482771e-09	20\\
+3.14212738123585e-09	20\\
+3.14212738123585e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.14212738123585e-09	0\\
+3.14212738123585e-09	13\\
+3.84291898764399e-09	13\\
+3.84291898764399e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+3.84291898764399e-09	0\\
+3.84291898764399e-09	6\\
+4.54371059405213e-09	6\\
+4.54371059405213e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.54371059405213e-09	0\\
+4.54371059405213e-09	5\\
+5.24450220046027e-09	5\\
+5.24450220046027e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.24450220046027e-09	0\\
+5.24450220046027e-09	1\\
+5.94529380686841e-09	1\\
+5.94529380686841e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+5.94529380686841e-09	0\\
+5.94529380686841e-09	1\\
+6.87069478250526e-09	1\\
+6.87069478250526e-09	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0.689073\fwidth,0.735294\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=12,
+title={L=30, h=100000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.50375446780562e-08	0\\
+-3.50375446780562e-08	5\\
+-2.10686605031717e-08	5\\
+-2.10686605031717e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-2.10686605031717e-08	0\\
+-2.10686605031717e-08	2\\
+-7.09977632828717e-09	2\\
+-7.09977632828717e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-7.09977632828717e-09	0\\
+-7.09977632828717e-09	12\\
+6.86910784659734e-09	12\\
+6.86910784659734e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+6.86910784659735e-09	0\\
+6.86910784659735e-09	6\\
+2.08379920214819e-08	6\\
+2.08379920214819e-08	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.08379920214819e-08	0\\
+2.08379920214819e-08	5\\
+4.14731849795557e-08	5\\
+4.14731849795557e-08	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0.344536\fwidth,0.735294\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=12,
+title={L=30, h=10000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.34866418269917e-08	0\\
+-1.34866418269917e-08	3\\
+-9.05480112850065e-09	3\\
+-9.05480112850065e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-9.05480112850065e-09	0\\
+-9.05480112850065e-09	3\\
+-4.62296043000961e-09	3\\
+-4.62296043000961e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-4.62296043000961e-09	0\\
+-4.62296043000961e-09	11\\
+-1.91119731518571e-10	11\\
+-1.91119731518571e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.91119731518571e-10	0\\
+-1.91119731518571e-10	7\\
+4.24072096697247e-09	7\\
+4.24072096697247e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+4.24072096697247e-09	0\\
+4.24072096697247e-09	6\\
+1.07875493913382e-08	6\\
+1.07875493913382e-08	0\\
+}--cycle;
+
+\end{axis}
+
+\begin{axis}[%
+width=0.261848\fwidth,
+height=0.264706\fheight,
+at={(0\fwidth,0.735294\fheight)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+xmin=-7.74904306970173e-08,
+xmax=6.89761454233884e-08,
+xlabel={displacement (m)},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+ymin=0,
+ymax=12,
+title={L=30, h=1000}
+]
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-5.03029963591883e-09	0\\
+-5.03029963591883e-09	2\\
+-3.27974742249428e-09	2\\
+-3.27974742249428e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-3.27974742249428e-09	0\\
+-3.27974742249428e-09	3\\
+-1.52919520906973e-09	3\\
+-1.52919520906973e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+-1.52919520906973e-09	0\\
+-1.52919520906973e-09	7\\
+2.21357004354818e-10	7\\
+2.21357004354818e-10	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+2.21357004354818e-10	0\\
+2.21357004354818e-10	11\\
+1.97190921777937e-09	11\\
+1.97190921777937e-09	0\\
+}--cycle;
+
+
+\addplot[area legend,solid,fill=mycolor1,draw=black,forget plot]
+table[row sep=crcr] {%
+x	y\\
+1.97190921777937e-09	0\\
+1.97190921777937e-09	7\\
+4.55786971791341e-09	7\\
+4.55786971791341e-09	0\\
+}--cycle;
+
+\end{axis}
+\end{tikzpicture}%
