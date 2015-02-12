@@ -14,7 +14,7 @@
 \usepackage{hyperref}
 \usepackage{siunitx}
 \usepackage{listings}
-
+\setlength{\extrarowheight}{3pt}
 \usepackage{listings}
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
@@ -56,5 +56,42 @@
 \end{equation}
 
 \section{}
+
+\section{}
+\begin{table}[h]
+\centering
+\caption{h = $10^3$}
+\begin{tabular}{l | c | c | c}
+Parameter~\textbackslash~L & 30 & 300 & 3000 \\
+\hline
+$\hat{\kappa}$ & \num{8.3} &\num{8.4} & \num{8.1} \\
+$\hat{\sigma}$ & \num{1.8e-9} & \num{8.1e-9} & \num{2.4e-8} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{h = $10^4$}
+\begin{tabular}{l | c | c | c}
+Parameter~\textbackslash~L & 30 & 300 & 3000 \\
+\hline
+$\hat{\kappa}$ & \num{3.8e1} & \num{4.2e1} & \num{4.3e1} \\
+$\hat{\sigma}$ & \num{2.1e-9} & \num{6.7e-9} & \num{2.1e-8} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{h = $10^5$}
+\begin{tabular}{l | c | c | c}
+Parameter~\textbackslash~L & 30 & 300 & 3000 \\[5pt]
+\hline
+$\hat{\kappa}$ & \num{1.6e2} & \num{1.5e2} & \num{1.8e2} \\
+$\hat{\sigma}$ & \num{2.0e-9} & \num{6.8e-9} & \num{2.1e-8} \\
+\hline
+\end{tabular}
+\end{table}
 
 \end{document}
