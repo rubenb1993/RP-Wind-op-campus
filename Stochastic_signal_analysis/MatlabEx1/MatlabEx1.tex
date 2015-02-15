@@ -18,9 +18,10 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage{environ}
-
+\usepackage{authblk}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \pgfplotsset{compat=1.11}
-
 \usepackage{listings}
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
@@ -43,11 +44,16 @@
     emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
     %emph=[2]{word1,word2}, emphstyle=[2]{style},    
 }
+	\title{Matlab Exercise I: Simulating Brownian Motion}
+	\author[$\dagger$]{Ruben Biesheuvel}
+	\author[$\ddagger$]{Mars Geuze}
+	\affil[$\dagger$]{Student number 4076680}
+	\affil[$\ddagger$]{Student number 4109419}
+	\renewcommand\Authands{ and }
+
 
 \begin{document}
 
-	\title{Matlab Exercise I: Simulating Brownian Motion}
-	\author{Ruben Biesheuvel \& Mars Geuze}
 	\maketitle
 
 
@@ -72,21 +78,32 @@
 
 \newpage\section{}
 \lstinputlisting{m/Exercise_4.m}
+\begin{figure}[h!]
+\centering
 \includegraphics[width=\textwidth]{m/Ex4-no-gaussian.pdf} 
+\caption{The histograms of the distribution of particles at varying distances (h) and different amount of particles (L)}
+\label{fig:nogaussian}
+\end{figure}
 
 \newpage\section{}
 \lstinputlisting{m/Exercise_5.m}
+\begin{figure}[h!]
+\centering
 \includegraphics[width=\textwidth]{m/Ex4-gaussian.pdf} 
+\caption{The histograms of the distribution of particles at varying distances (h) and different amount of particles (L), with the Gaussian fits as estimated by $\hat{\kappa}$ and $\hat{\sigma}$}
+\label{fig:gaussian}
+\end{figure}
 
 \newpage\section{}
 \begin{table}[h]
 \centering
 \caption{h = $10^3$}
+\label{tab:h1000}
 \begin{tabular}{l | c | c | c}
 Parameter~\textbackslash~L & 30 & 300 & 3000 \\
 \hline
-$\hat{\kappa}$ & \num{8.3} &\num{8.4} & \num{8.1} \\
-$\hat{\sigma}$ & \num{1.8e-9} & \num{8.1e-9} & \num{2.4e-8} \\
+$\hat{\kappa}$ & \num{8.3} &\num{3.8e1} & \num{1.6e2} \\
+$\hat{\sigma}$ & \num{1.8e-9} & \num{2.1e-9} & \num{2.0e-9}\\
 \hline
 \end{tabular}
 \end{table}
@@ -94,11 +111,12 @@ $\hat{\sigma}$ & \num{1.8e-9} & \num{8.1e-9} & \num{2.4e-8} \\
 \begin{table}[h]
 \centering
 \caption{h = $10^4$}
+\label{tab:h10000}
 \begin{tabular}{l | c | c | c}
 Parameter~\textbackslash~L & 30 & 300 & 3000 \\
 \hline
-$\hat{\kappa}$ & \num{3.8e1} & \num{4.2e1} & \num{4.3e1} \\
-$\hat{\sigma}$ & \num{2.1e-9} & \num{6.7e-9} & \num{2.1e-8} \\
+$\hat{\kappa}$ & \num{8.4} & \num{4.2e1} & \num{1.5e2}\\
+$\hat{\sigma}$ & \num{8.1e-9} & \num{6.7e-9} &  \num{6.8e-9}\\
 \hline
 \end{tabular}
 \end{table}
@@ -106,13 +124,21 @@ $\hat{\sigma}$ & \num{2.1e-9} & \num{6.7e-9} & \num{2.1e-8} \\
 \begin{table}[h]
 \centering
 \caption{h = $10^5$}
+\label{tab:h100000}
 \begin{tabular}{l | c | c | c}
 Parameter~\textbackslash~L & 30 & 300 & 3000 \\[5pt]
 \hline
-$\hat{\kappa}$ & \num{1.6e2} & \num{1.5e2} & \num{1.8e2} \\
-$\hat{\sigma}$ & \num{2.0e-9} & \num{6.8e-9} & \num{2.1e-8} \\
+$\hat{\kappa}$ & \num{8.1} & \num{4.3e1}  & \num{1.8e2} \\
+$\hat{\sigma}$ & \num{2.4e-8}  & \num{2.1e-8} & \num{2.1e-8} \\
 \hline
 \end{tabular}
 \end{table}
 
+\newpage\section{}
+%From the Tables \autoref{tab:h1000}, \autoref{tab:h10000} and \autoref{tab:h100000} it can be concluded that within one drawing the height of the Gaussian fit ($\hat{\kappa}$) does not vary with the distance, but the standard deviation ($\hat{\sigma}$) does increase within one drawing when increasing the distance.  
+From the Tables \autoref{tab:h1000}, \autoref{tab:h10000} and \autoref{tab:h100000} it can be concluded that at a set distance h, the estimator for the height of the Gaussian ($\hat{\kappa}$) increases with the amount of drawing L, but the estimator for the standard deviation ($\hat{\kappa}$) does not vary much. The estimator for the height increases because the the histograms are not normalized, and therefore the Gaussian is not normalized. The standard deviation seems to converge to the ``real'' value $\sigma$ with more drawings.
+
+These statements are visualized in \autoref{fig:gaussian}. In the top row, it shows the Gaussian fits for $\text{L} = 30$ where the Gaussian crudely follow the histogram. For instance, at $\text{h} = 100000$ the estimator $\hat{\kappa}$ estimates the height of the middle bin to be 8.3, while the actual height is 10.  The last row shows $\text{L} = 3000$, where it shows that the Gaussian follows the histograms much more accurately, with most bins neatly within the Gaussian curve. This shows that $\hat{\sigma}$ can be more accurately predicted by increasing the amount of draws from the process (L). 
+
+This process is not wide sense stationary, because the variance increases with the time. The longer the process goes on, the more widespread the results are, while for a WSS process, the variance only depends on the time step. 
 \end{document}
