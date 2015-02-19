@@ -164,7 +164,7 @@ A necessary condition for a system to be a stable, and thus to be WSS, is that t
 \end{equation}
 The value of $z$ with the biggest magnitude which satisfies \autoref{poles} will be denoted by $z_1$ and can be found using the $ABC$-formula:
 \begin{equation}\label{ABC}
-z_1=\frac{-\beta_1+\sqrt{\beta_2^2-4\beta_2}}{2}.
+\frac{-\beta_1+\sqrt{\beta_2^2-4\beta_2}}{2}.
 \end{equation}
 substituting \autoref{B1} and \autoref{B2} in \autoref{ABC}, the following expression for $z_1$ is found:
 \begin{align*}
