@@ -26,6 +26,7 @@
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{mygray}{RGB}{0.5, 0.5, 0.5}
 
 \newlength\figureheight 
 \newlength\figurewidth 
@@ -36,6 +37,9 @@
 		basicstyle=\scriptsize,
     breaklines=true,%
     morekeywords={matlab2tikz},
+    frame=single,%
+	numbers=left,%
+	numberstyle=\tiny\color{mygray},%
     keywordstyle=\color{blue},%
     morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
     identifierstyle=\color{black},%
@@ -48,9 +52,9 @@
     emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
     %emph=[2]{word1,word2}, emphstyle=[2]{style},    
 }
-	\title{\textbf{\texttt{Matlab}~ $^\text{{\fontsize{12}{1em}\textcopyright}}$ Exercise II: Active Noise Control with an FIR filter}}
-	\author[$\dagger$]{Ruben Biesheuvel}
-	\author[$\ddagger$]{Mars Geuze}
+	\title{\textbf{\texttt{Matlab}$^\text{{\fontsize{12}{1em}\textcopyright}}$ Exercise II: Active Noise Control with an FIR filter}}
+	\author[$\dagger$]{Ruben \textsc{Biesheuvel}}
+	\author[$\ddagger$]{Mars \textsc{Geuze}}
 	\affil[$\dagger$]{Student number 4076680}
 	\affil[$\ddagger$]{Student number 4109139}
 	\renewcommand\Authands{ and }
@@ -61,6 +65,7 @@
 	\maketitle
 
 \section*{Question 1}
+\subsection*{Question 1.1}
 \subsection*{Question 1.2}
 \label{code1}
 \lstinputlisting{m/Exercise_1.m}
@@ -99,7 +104,7 @@ Filter order $m$ & $\sigma_{W}$ \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[b!]
+\begin{figure}[h!]
 \centering
 \input{m/Exercise_2.tex}
 \caption{Subplot 1 shows the original sound and the noise corrupted signal. Subplot 2 shows the original sound and the filtered sound with optimal Wiener filter $W(z)$ of order \num{6}}
