@@ -1,0 +1,177 @@
+\documentclass[12pt]{article}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{stfloats}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{latexsym}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{listings}
+\setlength{\extrarowheight}{3pt}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{environ}
+\usepackage{authblk}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\pgfplotsset{compat=1.11}
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+		basicstyle=\scriptsize,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    %numbers=left,%
+    %numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+	\title{Matlab Exercise I: Simulating Brownian Motion}
+	\author[$\dagger$]{Ruben Biesheuvel}
+	\author[$\ddagger$]{Mars Geuze}
+	\affil[$\dagger$]{Student number 4076680}
+	\affil[$\ddagger$]{Student number 4109139}
+	\renewcommand\Authands{ and }
+
+
+\begin{document}
+
+	\maketitle
+
+
+\section*{Question 1}
+\begin{equation}\label{difference}
+x[n]+\beta_1x[n-1]+\beta_2x[n-2]=\beta_3\tilde{w}[n]
+\end{equation}
+\begin{align}
+	\beta_1 &= -\frac{2m + \gamma\Delta t}{m+\gamma\Delta t} =-2.0\label{B1}\\
+	\beta_2 &= \frac{m}{m+\gamma\Delta t} =0.98\label{B2}\\
+	\beta_3 &= \frac{\sqrt{2k_BT\gamma\Delta t}}{\frac{m}{\Delta t}+\gamma}= 1.1\cdot10^{-12}\\
+	m &= (4/3)*\pi*R^3*\rho
+\end{align}
+
+\clearpage\section*{Question 2}
+\lstinputlisting{m/Exercise_2.m}
+\input{m/Exercise_2.tex}
+
+\clearpage\section*{Question 3}
+\lstinputlisting{m/Exercise_3.m}
+\input{m/Exercise_3.tex}
+
+\clearpage\section*{Question 4}
+\lstinputlisting{m/Exercise_4.m}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{m/Ex4-no-gaussian.pdf} 
+\caption{The histograms of the distribution of particles at varying distances (h) and different amount of particles (L)}
+\label{fig:nogaussian}
+\end{figure}
+
+\clearpage\section*{Question 5}
+\lstinputlisting{m/Exercise_5.m}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{m/Ex4-gaussian.pdf} 
+\caption{The histograms of the distribution of particles at varying distances (h) and different amount of particles (L), with the Gaussian fits as estimated by $\hat{\kappa}$ and $\hat{\sigma}$}
+\label{fig:gaussian}
+\end{figure}
+
+\clearpage\section*{Question 6}
+\begin{table}[h]
+\centering
+\caption{h = $10^3$}
+\label{tab:h1000}
+\begin{tabular}{l | c | c | c}
+Parameter~\textbackslash~L & 30 & 300 & 3000 \\
+\hline
+$\hat{\kappa}$ & \num{8.3} &\num{3.8e1} & \num{1.6e2} \\
+$\hat{\sigma}$ & \num{1.8e-9} & \num{2.1e-9} & \num{2.0e-9}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{h = $10^4$}
+\label{tab:h10000}
+\begin{tabular}{l | c | c | c}
+Parameter~\textbackslash~L & 30 & 300 & 3000 \\
+\hline
+$\hat{\kappa}$ & \num{8.4} & \num{4.2e1} & \num{1.5e2}\\
+$\hat{\sigma}$ & \num{8.1e-9} & \num{6.7e-9} &  \num{6.8e-9}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{h = $10^5$}
+\label{tab:h100000}
+\begin{tabular}{l | c | c | c}
+Parameter~\textbackslash~L & 30 & 300 & 3000 \\[5pt]
+\hline
+$\hat{\kappa}$ & \num{8.1} & \num{4.3e1}  & \num{1.8e2} \\
+$\hat{\sigma}$ & \num{2.4e-8}  & \num{2.1e-8} & \num{2.1e-8} \\
+\hline
+\end{tabular}
+\end{table}
+
+\clearpage\section*{Question 7}
+%From the Tables \autoref{tab:h1000}, \autoref{tab:h10000} and \autoref{tab:h100000} it can be concluded that within one drawing the height of the Gaussian fit ($\hat{\kappa}$) does not vary with the distance, but the standard deviation ($\hat{\sigma}$) does increase within one drawing when increasing the distance.  
+From \autoref{tab:h1000}, \autoref{tab:h10000} and \autoref{tab:h100000} it can be concluded that at a set time $h\Delta t$, the estimator for the height of the Gaussian ($\hat{\kappa}$) increases with the amount of realizations $L$, but the estimator for the standard deviation ($\hat{\kappa}$) does not vary much. The estimator for the height increases because the the histograms are not normalized, and therefore the Gaussian is not normalized. The standard deviation seems to converge to the ``real'' value $\sigma$ with more drawings.
+
+These statements are visualized in \autoref{fig:gaussian}. In the top row, it shows the Gaussian fits for $L = 30$ where the Gaussian crudely follow the histogram. For instance, at $\text{h} = 100000$ the estimator $\hat{\kappa}$ for the best Gaussian fit is 8.3, while the actual height of the middle bin is 10. The last row shows $L = 3000$, where it shows that the Gaussian follows the histograms much more accurately, with most bins neatly within the Gaussian curve. This shows that $\hat{\sigma}$ can be more accurately predicted by increasing the amount of realizations from the process ($L$). 
+
+A necessary condition for a process to be wide sense stationary (WSS) is for its correlation function to satisfy the following equation:
+\begin{equation}\label{WSScondition}
+r_x(k,l) = r_x(k-l) \forall k,l. 
+\end{equation}
+Taking $k=l$, the auto-correlation function becomes:
+\begin{equation}
+r_x(k,k) = r_x(0) = E\{(x[k]-E\{x[k]\})^2\} = \text{Var}\{x\}.
+\end{equation}
+Since $k$ can be any value, the variance of a WSS process must be constant over time. This process is not WSS, because the variance increases with the time. The longer the process goes on, the more widespread the results are.
+
+We will now look at the Z transform of \autoref{difference} to see whether from this it can also be concluded the the system is not WSS. Assuming white noise can be Z-transformed, the Z-transform of \autoref{difference} is:
+\begin{equation}\label{Z}
+X(z)+\beta_1z^{-1}X(z)+\beta_2z^{-2}X(z)=\beta_3W(z).
+\end{equation}
+The system function $H(z)$ can then be written as:
+\begin{equation}\label{H}
+H(z)=\frac{X(z)}{W(z)}=\frac{\beta_3}{1+\beta_1z^{-1}+\beta_2z^{-2}}.
+\end{equation}
+A necessary condition for a system to be a stable, and thus to be WSS, is that the poles of the system function $H(z)$ are within the unit circle. The poles can be found by finding $z$ for which the divider of \autoref{H} is 0:
+\begin{equation}\label{poles}
+1+\beta_1z^{-1}+\beta_2z^{-2}=0.
+\end{equation}
+The value of $z$ with the biggest magnitude which satisfies \autoref{poles} will be denoted by $z_1$ and can be found using the $ABC$-formula:
+\begin{equation}\label{ABC}
+z_1=\frac{-\beta_1+\sqrt{\beta_2^2-4\beta_2}}{2}.
+\end{equation}
+substituting \autoref{B1} and \autoref{B2} in \autoref{ABC}, the following expression for $z_1$ is found:
+\begin{align*}
+z_1=&\frac{1}{2}\left(\frac{2m+\gamma\Delta t}{m+\gamma\Delta t}+\sqrt{\left(\frac{2m+\gamma\Delta t}{m+\gamma\Delta t}\right)^2-\frac{4m}{m+\gamma\Delta t}} \right)=\\
+&\frac{1}{2}\left(\frac{2m+\gamma\Delta t}{m+\gamma\Delta t}+\sqrt{\frac{4m+4m\gamma\Delta t+\gamma^2\Delta t^2}{(m+\gamma\Delta t)^2}-\frac{4m+4m\gamma\Delta t}{(m+\gamma\Delta t)^2}}\right) =\\
+&\frac{1}{2}\left(\frac{2m+\gamma\Delta t}{m+\gamma\Delta t} + \frac{\gamma\Delta t}{m+\gamma\Delta t}\right) = 1.
+\end{align*}
+Since $z_1=1$, the unit circle is not part of the region of convergence of $H(z)$, so $H(z)$ is not stable, and therefore the system is not WSS.
+
+\end{document}
