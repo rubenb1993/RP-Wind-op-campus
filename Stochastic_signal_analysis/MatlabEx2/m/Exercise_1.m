@@ -30,7 +30,7 @@ x = d + v1;
 n = [1 2 4 6];
 Stdd = zeros(length(n),1);
 W_tot = zeros(max(n),length(n));
-for k = 1:4
+for k = 1:length(n)
 % First we determine Rv2 and Rv1v2 needed to set up the Wiener-Hopf
 
 % Calculate the first two values of rv2 (i.e. rv2(0) and rv2(1))
