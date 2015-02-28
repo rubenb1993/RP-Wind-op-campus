@@ -2,11 +2,10 @@
 % Goal: Approximate the auto- and cross correlation functions used in 
 %       the Wiener-Hopf equations from the signals
 
-%n = input('Order filter: ');
 % Let n vary between the desired filter orders
 n = [1 2 4 6];
-Stdd2 = zeros(4,1);
-W_tot2 = zeros(6,4);
+Stdd2 = zeros(length(n),1);
+W_tot2 = zeros(max(n),length(n));
 for k = 1:length(n)
 % Construct an n by (N-n+1) matrix V2 containing shifted versions of v2
 V2 = zeros(n(k), N-n(k)+1);

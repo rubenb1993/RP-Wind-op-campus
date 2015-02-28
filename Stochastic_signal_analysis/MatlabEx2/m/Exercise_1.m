@@ -23,38 +23,23 @@ v2 = filter(b2,a2,g);
 % Generate the corrupted signal x
 x = d + v1;
 
-% You can uncomment one of the following to inspect the signals:
-% plot(d); sound(d, Fs);
-% plot(v1); sound(v1);
-% plot(v2); sound(v2);
-% plot(x); sound(x);
-
 %% Exercise 1: Determining the optimal FIR Wiener Filter
 % Goal: reconstruct d from x and v2 by estimating v1 from v2
 
-%n = input('Order filter: ');
 % Let n vary between the desired filter orders
 n = [1 2 4 6];
-Stdd = zeros(4,1);
-W_tot = zeros(6,4);
-Sound_diff = zeros(4,length(x));
+Stdd = zeros(length(n),1);
+W_tot = zeros(max(n),length(n));
 for k = 1:4
 % First we determine Rv2 and Rv1v2 needed to set up the Wiener-Hopf
-% Equations:
-%
-%  Rv2 W = Rv1v2 (=Rxv2)
-%
 
 % Calculate the first two values of rv2 (i.e. rv2(0) and rv2(1))
 % using eq (3.116) from Hayes
-% You can find the 'dimpulse' function on the TU computers
 h = dimpulse(b2, a2, 20);
 c(1,1) = b2(1)*conj(h(1)) + b2(2)*conj(h(2));
 c(2,1) = b2(2)*conj(h(1));
 
  rv2 = zeros(200,1);
-% rv2(2) = (sg^2.*(c(1,1)*a2(2)-c(2,1)));
-% rv2(1) = c(1,1)*sg^2 - a2(2)*rv2(2);
 rv2(1) = (sg^2*c(1,1) - a2(2)*sg^(2)*c(2,1))/(1-a2(2)^2);
 rv2(2) = sg^2*c(2,1) - a2(2)*rv2(1);
 
@@ -91,5 +76,4 @@ de  = x - v1e;
 % Save the necessary data necessary to evaluate the sound
 W_tot(1:length(W),k) = W;
 Stdd(k) = std(d-de);
-Sound_diff(k,:) = de;
 end
