@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=MatlabEx1.tex
 
 [Frame0_View0,0]
-TopLine=123
-Cursor=5435
+TopLine=157
+Cursor=7563
 
 [Frame1]
 Flags=0
