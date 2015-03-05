@@ -17,6 +17,7 @@
 \setlength{\extrarowheight}{3pt}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{booktabs}
 \usepackage{environ}
 \usepackage{authblk}
 \usepackage[T1]{fontenc}
@@ -81,14 +82,11 @@ The poles of $H_{v_1}(z)$ and $H_{v_2}(z)$ are $a_1(1)$ and $a_2(1)$ respectivel
 \begin{table}
 \centering
 \caption{\label{tab:param}Parameters given for the generation of signals $v_1$ and $v_2$.}
-\begin{tabular}{|c|c|}
-\hline
-$a_1(1)$ & 0.9\\\hline
-$b_1(0)$ & 1\\\hline
-$b_1(1)$ & 0.2\\\hline
-$a_2(1)$ & 0.95\\\hline
-$b_2(0)$ & 1\\\hline
-$b_2(1)$ & 0.3\\\hline
+\begin{tabular}{ c c c c }
+\toprule
+$a_1(0)$ = 1 & $a_1(1)$ = 0.9 & $b_1(0)$ = 1 & $b_1(1)$ = 0.2\\
+$a_2(0)$ = 1 & $a_2(1)$ = 0.95 & $b_2(0)$ = 1 & $b_2(1)$ = 0.3\\
+\bottomrule
 \end{tabular}
 \end{table}
 
